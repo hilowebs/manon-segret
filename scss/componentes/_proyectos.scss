@@ -1,0 +1,287 @@
+.proyectos-titulo {
+    font-family: $font-titular;
+    color: $blanco;
+    font-size: 9rem;
+    font-weight: 130;
+        text-align: center;
+        margin-top: 0rem;
+        margin-bottom: 3rem;
+            grid-area: pr-ti;
+                    /* TELEFONO */
+                    @media only screen and (max-width: 500px) { 
+                        font-size: 7rem;
+                    }
+}
+
+/* ----------------------- IMAGENES ----------------------- */
+
+.imagen-proyectos {
+    border-radius: 1rem;
+}
+
+#modelo1 {
+    width: 22rem;
+    margin-right: 1rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+            width: 19rem;
+        }
+}
+
+#modelo2 {
+    width: 21.9rem;
+    margin-left: 1rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+            width: 19rem;
+        }
+}
+
+#manijes {
+    width: 37rem;
+    margin-left: 3rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+            width: 18rem;
+        }
+}
+
+#manijes-texto {
+    margin-left: 3rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+        }
+}
+
+#orco {
+    width: 25rem;
+    margin-right: 3rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+            width: 18rem;
+        }
+}
+
+#orco-texto {
+    margin-right: 3rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+        }
+}
+
+#mago {
+    width: 28rem;
+            /* TELEFONO */
+            @media only screen and (max-width: 500px) { 
+                margin: 0rem;
+                width: 17rem;
+            }
+}
+
+#señora {
+    width: 22rem;
+    margin-right: 3rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+            width: 18rem;
+        }
+}
+
+#texto-señora {
+    margin-right: 3rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+        }
+}
+
+#otros-foto1 {
+    width: 20.5rem;
+    margin-right: 1rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+            width: 18.5rem;
+        }
+}
+
+#otros-foto2 {
+    width: 23.4rem;
+            /* TELEFONO */
+            @media only screen and (max-width: 500px) { 
+                margin: 0rem;
+                width: 19.4rem;
+            }
+}
+
+#otros-foto3 {
+    width: 19rem;
+    margin-left: 1rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin: 0rem;
+            width: 17rem;
+        }
+}
+
+.contenedor-imagenes-otros {
+    text-align: center;
+    margin-bottom: 7rem;
+    grid-area: imgs-otros;
+}
+
+/* ----------------------- PROYECTOS PRINCIPALES ----------------------- */
+
+iframe {               
+    /* TELEFONO */
+    @media only screen and (max-width: 500px) { 
+        height: 15rem;
+        width: 22rem;
+        resize: both;
+        overflow: auto;
+    }
+}
+
+#video-proyectos {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.texto-video {
+    font-family: $font-secundaria;
+    color: $blanco;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+        text-align: center;
+}
+
+.proyecto-video {
+    grid-area: video;
+    margin-bottom: 10rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin-bottom: 5rem;
+        }
+}
+
+.proyecto-modelo {
+    grid-area: modelo;
+    text-align: center;
+    margin-bottom: 15rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin-bottom: 10rem;
+        }
+}
+
+.proyecto2 {
+    grid-area: p2;
+    text-align: center;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin-bottom: 5rem;
+        }
+}
+
+.proyecto3 {
+    grid-area: p3;
+    text-align: center;
+    margin-bottom: 7rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin-bottom: 5rem;
+        }
+}
+
+.proyecto4 {
+    grid-area: p4;
+    text-align: center;
+    margin-bottom: 7rem;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin-bottom: 5rem;
+        }
+}
+
+.proyecto5 {
+    grid-area: p5;
+    text-align: center;
+        /* TELEFONO */
+        @media only screen and (max-width: 500px) { 
+            margin-bottom: 5rem;
+        }
+}
+
+.texto-proyectos {
+    font-family: $font-secundaria;
+    color: $blanco;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ----------------------- PROYECTOS OTROS ----------------------- */
+
+.titulo-otros-proyectos {
+    font-family: $font-terciaria;
+    color: $blanco;
+    font-size: 3rem;
+}
+
+.texto-otros-proyectos {
+    font-family: $font-secundaria;
+    color: $blanco;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+}
+
+.otros-proyectos {
+    grid-area: otros;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ----------------------- FOOTER ----------------------- */
+
+.link-proyectos {
+    font-family: $font-secundaria;
+    color: $blanco;
+    font-size: 2rem;
+    text-decoration: none;
+            /* TELEFONO */
+            @media only screen and (max-width: 500px) { 
+                text-align: center;
+            }
+}
+
+.link-proyectos:hover {
+    text-decoration: underline;
+}
+
+#contacto-proyectos {
+    grid-area: con;
+    margin-left: 15rem;
+            /* TELEFONO */
+            @media only screen and (max-width: 500px) { 
+                margin-left: 0rem;
+                margin-bottom: 1rem;
+            }
+}
+
+#index-proyectos {
+    grid-area: ind;
+    margin-left: 10rem;
+        @media only screen and (max-width: 500px) { 
+            margin-left: 0rem;
+        }
+}

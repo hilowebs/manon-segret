@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "La Beauties";
+  src: url("./fonts/La Beauties.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Saudagar";
+  src: url("./fonts/Saudagar.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  background-image: url("../imgs/fondo-phone.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0%;
+}
+@media only screen and (min-width: 414px) {
+  body {
+    background-image: url("../imgs/fondo-tablet.png");
+  }
+}
+@media only screen and (min-width: 1280px) {
+  body {
+    background-image: url("../imgs/fondo-pc.png");
+  }
+}

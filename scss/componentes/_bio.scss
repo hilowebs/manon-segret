@@ -1,0 +1,64 @@
+#titulo-bio {
+    color: $blanco;
+    font-family: $font-titular;
+    font-size: 10rem;
+    font-weight: 130;
+    padding: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        margin-right: 0rem;
+            grid-area: ti-bi;
+               /* TELEFONO */
+               @media only screen and (max-width: 500px) {
+                font-size: 7em;
+               }  
+}   
+
+#contenedor-texto-bio {
+    color: $blanco;
+    font-family: $font-terciaria;
+    font-size: 1.2rem;
+    width: 60%;
+    text-align: justify;
+    padding: 0rem;
+        margin-top: 0rem;
+        margin-right: 0rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+            grid-area: te-bi;
+}
+
+/* --------------- FOOTER --------------- */
+
+.footer-bio {
+    grid-area: fo-bi;
+}
+
+.link-bio {
+    color: $blanco;
+    font-family: $font-secundaria;
+    text-decoration: none;
+    font-size: 1.5rem;
+        margin-left: 2rem;
+               /* TELEFONO */
+               @media only screen and (max-width: 500px) {
+                margin-left: 1rem;
+               }    
+}
+
+.footer-bio:hover {
+    text-decoration: underline;
+}
+
+#instagram-bio {
+    width: 2.2rem;
+    padding: 0rem;
+        margin-left: 3rem;
+            grid-area: ig;
+               /* TELEFONO */
+               @media only screen and (max-width: 500px) {
+                margin-left: 2rem;
+               }  
+}
+

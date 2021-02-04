@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "La Beauties";
+  src: url("./fonts/La Beauties.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Saudagar";
+  src: url("./fonts/Saudagar.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Florania Trial";
+  src: url("./fonts/Florania Trial.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-image: url("../imgs/fondo-contacto.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  body, html {
+    background-image: url("../imgs/fondo-contacto-telefono.png");
+  }
+}
+
+.contenedor-contacto {
+  height: 100%;
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-areas: "ti-co" "nom" "ema" "men";
+}
+
+.titulo-contacto {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: ti-co;
+  font-family: "La Beauties";
+  font-size: 8rem;
+  color: #fcfcfc;
+  font-weight: 130;
+  padding: 0rem;
+  margin-bottom: 1rem;
+  margin-top: -2rem;
+  text-align: center;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  .titulo-contacto {
+    font-size: 6rem;
+  }
+}
+
+.form {
+  margin-top: -5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  .form {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.form-label {
+  font-family: "Saudagar";
+  font-size: 1.5rem;
+  color: #fcfcfc;
+  margin-top: 5rem;
+}
+
+/* --- DATOS-F --- */
+.nombre-contenedor {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nom;
+}
+
+#nombre {
+  border-radius: 0.5rem;
+  border: none;
+  height: 2rem;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.email-contenedor {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: ema;
+}
+
+#email {
+  border-radius: 0.5rem;
+  border: none;
+  height: 2rem;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+/* --- MENSAJE-F --- */
+.mensaje-contenedor {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: men;
+}
+
+#mensaje {
+  border-radius: 0.5rem;
+  border: none;
+  height: 11rem;
+  width: 20rem;
+  background-color: rgba(252, 252, 252, 0.5);
+}
+
+.enviar {
+  font-family: "Saudagar";
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  color: #fcfcfc;
+  border: none;
+  background-color: rgba(252, 252, 252, 0.1);
+}

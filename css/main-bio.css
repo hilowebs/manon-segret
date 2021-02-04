@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "La Beauties";
+  src: url("./fonts/La Beauties.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Saudagar";
+  src: url("./fonts/Saudagar.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Florania Trial";
+  src: url("./fonts/Florania Trial.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-image: url("../imgs/fondo-bio.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  body, html {
+    background-image: url("../imgs/fondo-bio-telefono.png");
+  }
+}
+
+.contenedor-bio {
+  height: 100%;
+  width: 100%;
+  margin: 0rem;
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-areas: ". ti-bi ." "te-bi te-bi te-bi" "te-bi te-bi te-bi" "te-bi te-bi te-bi" "fo-bi fo-bi fo-bi";
+}
+
+#titulo-bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  color: #fcfcfc;
+  font-family: "La Beauties";
+  font-size: 10rem;
+  font-weight: 130;
+  padding: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-right: 0rem;
+  grid-area: ti-bi;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  #titulo-bio {
+    font-size: 7em;
+  }
+}
+
+#contenedor-texto-bio {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  color: #fcfcfc;
+  font-family: "Florania Trial";
+  font-size: 1.2rem;
+  width: 60%;
+  text-align: justify;
+  padding: 0rem;
+  margin-top: 0rem;
+  margin-right: 0rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  grid-area: te-bi;
+}
+
+/* --------------- FOOTER --------------- */
+.footer-bio {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: fo-bi;
+}
+
+.link-bio {
+  color: #fcfcfc;
+  font-family: "Saudagar";
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  .link-bio {
+    margin-left: 1rem;
+  }
+}
+
+.footer-bio:hover {
+  text-decoration: underline;
+}
+
+#instagram-bio {
+  width: 2.2rem;
+  padding: 0rem;
+  margin-left: 3rem;
+  grid-area: ig;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  #instagram-bio {
+    margin-left: 2rem;
+  }
+}

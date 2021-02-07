@@ -108,18 +108,23 @@ body, html {
 #musica1 {
   width: 30rem;
   margin-right: 1rem;
-    /* TELEFONO */
+}
 @media only screen and (max-width: 500px) {
-    width: 20rem;
+  #musica1 {
+    margin-right: 0rem;
+    margin-bottom: 2rem;
+    width: 18rem;
   }
 }
 
 #musica2 {
   width: 30rem;
-      /* TELEFONO */
-@media only screen and (max-width: 500px) {
-  width: 20rem;
 }
+@media only screen and (max-width: 500px) {
+  #musica2 {
+    margin: 0rem;
+    width: 18rem;
+  }
 }
 
 #manijes {
@@ -140,7 +145,7 @@ body, html {
 }
 @media only screen and (max-width: 500px) {
   #manijes-texto {
-    margin: 0rem;
+    margin: 1rem;
   }
 }
 
@@ -162,7 +167,7 @@ body, html {
 }
 @media only screen and (max-width: 500px) {
   #orco-texto {
-    margin: 0rem;
+    margin: 1rem;
   }
 }
 
@@ -195,7 +200,7 @@ body, html {
 }
 @media only screen and (max-width: 500px) {
   #texto-señora {
-    margin: 0rem;
+    margin: 1rem;
   }
 }
 
@@ -329,6 +334,12 @@ iframe {
   font-size: 3rem;
   /* TELEFONO */
 }
+@media only screen and (max-width: 500px) {
+  .subtitulo-actriz {
+    margin: 1rem;
+  }
+}
+
 .proyecto2 {
   -ms-grid-row: 6;
   -ms-grid-column: 1;
@@ -389,6 +400,13 @@ iframe {
   letter-spacing: 0.1rem;
   text-align: center;
   font-weight: bold;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  .texto-proyectos {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 /* ----------------------- PROYECTOS OTROS ----------------------- */
@@ -398,6 +416,13 @@ iframe {
   font-style: italic;
   opacity: 75%;
   font-size: 3rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  .titulo-otros-proyectos {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .texto-otros-proyectos {
@@ -405,6 +430,13 @@ iframe {
   color: #fcfcfc;
   letter-spacing: 0.1rem;
   font-weight: bold;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  .texto-otros-proyectos {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .otros-proyectos {

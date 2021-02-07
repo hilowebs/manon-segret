@@ -44,15 +44,15 @@ body, html {
   padding: 0rem;
   display: grid;
   grid-template-columns: 1fr, 1fr, 1fr;
-  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-  grid-template-areas: "pr-ti pr-ti pr-ti" "video video video" "modelo modelo modelo" "p2 . p5" "p4 . p3" "otros otros otros" "imgs-otros imgs-otros imgs-otros" "ind . con";
+  grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+  grid-template-areas: "pr-ti pr-ti pr-ti" "video video video" "modelo modelo modelo" "musica musica musica" "subt subt subt" "p2 . p5" "p4 . p3" "otros otros otros" "imgs-otros imgs-otros imgs-otros" "ind . con";
   /* TELEFONO */
 }
 @media only screen and (max-width: 500px) {
   .contenedor-proyectos {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
-    grid-template-areas: "pr-ti" "video" "modelo" "p2" "p5" "p4" "p3" "otros" "imgs-otros" "ind" "con";
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+    grid-template-areas: "pr-ti" "video" "modelo" "musica" "subt" "p2" "p5" "p4" "p3" "otros" "imgs-otros" "ind" "con";
   }
 }
 
@@ -103,6 +103,15 @@ body, html {
     margin: 0rem;
     width: 19rem;
   }
+}
+
+#musica1 {
+  width: 30rem;
+  margin-right: 1rem;
+}
+
+#musica2 {
+  width: 30rem;
 }
 
 #manijes {
@@ -218,7 +227,7 @@ body, html {
 }
 
 .contenedor-imagenes-otros {
-  -ms-grid-row: 7;
+  -ms-grid-row: 9;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   text-align: center;
@@ -243,6 +252,7 @@ iframe {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 2rem;
 }
 
 .texto-video {
@@ -258,12 +268,12 @@ iframe {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: video;
-  margin-bottom: 10rem;
+  margin-bottom: 9rem;
   /* TELEFONO */
 }
 @media only screen and (max-width: 500px) {
   .proyecto-video {
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
   }
 }
 
@@ -282,8 +292,37 @@ iframe {
   }
 }
 
-.proyecto2 {
+.proyecto-musica {
   -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: musica;
+  text-align: center;
+  margin-bottom: 15rem;
+  /* TELEFONO */
+}
+@media only screen and (max-width: 500px) {
+  .proyecto-musica {
+    margin-bottom: 10rem;
+  }
+}
+
+.subtitulo-actriz {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: subt;
+  text-align: center;
+  font-style: italic;
+  opacity: 75%;
+  margin-bottom: 5rem;
+  font-family: "Florania Trial";
+  color: #fcfcfc;
+  font-size: 3rem;
+  /* TELEFONO */
+}
+.proyecto2 {
+  -ms-grid-row: 6;
   -ms-grid-column: 1;
   grid-area: p2;
   text-align: center;
@@ -296,7 +335,7 @@ iframe {
 }
 
 .proyecto3 {
-  -ms-grid-row: 5;
+  -ms-grid-row: 7;
   -ms-grid-column: 3;
   grid-area: p3;
   text-align: center;
@@ -310,7 +349,7 @@ iframe {
 }
 
 .proyecto4 {
-  -ms-grid-row: 5;
+  -ms-grid-row: 7;
   -ms-grid-column: 1;
   grid-area: p4;
   text-align: center;
@@ -324,7 +363,7 @@ iframe {
 }
 
 .proyecto5 {
-  -ms-grid-row: 4;
+  -ms-grid-row: 6;
   -ms-grid-column: 3;
   grid-area: p5;
   text-align: center;
@@ -348,6 +387,8 @@ iframe {
 .titulo-otros-proyectos {
   font-family: "Florania Trial";
   color: #fcfcfc;
+  font-style: italic;
+  opacity: 75%;
   font-size: 3rem;
 }
 
@@ -359,7 +400,7 @@ iframe {
 }
 
 .otros-proyectos {
-  -ms-grid-row: 6;
+  -ms-grid-row: 8;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: otros;
@@ -367,6 +408,7 @@ iframe {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5rem;
 }
 
 /* ----------------------- FOOTER ----------------------- */
@@ -388,7 +430,7 @@ iframe {
 }
 
 #contacto-proyectos {
-  -ms-grid-row: 8;
+  -ms-grid-row: 10;
   -ms-grid-column: 3;
   grid-area: con;
   margin-left: 15rem;
@@ -402,7 +444,7 @@ iframe {
 }
 
 #index-proyectos {
-  -ms-grid-row: 8;
+  -ms-grid-row: 10;
   -ms-grid-column: 1;
   grid-area: ind;
   margin-left: 10rem;
@@ -415,7 +457,7 @@ iframe {
     -ms-grid-column-span: 1;
   }
   .contenedor-imagenes-otros {
-    -ms-grid-row: 9;
+    -ms-grid-row: 11;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
@@ -429,33 +471,43 @@ iframe {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
-  .proyecto2 {
+  .proyecto-musica {
     -ms-grid-row: 4;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
   }
-  .proyecto3 {
-    -ms-grid-row: 7;
+  .subtitulo-actriz {
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
   }
-  .proyecto4 {
+  .proyecto2 {
     -ms-grid-row: 6;
     -ms-grid-column: 1;
   }
+  .proyecto3 {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+  .proyecto4 {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+  }
   .proyecto5 {
-    -ms-grid-row: 5;
+    -ms-grid-row: 7;
     -ms-grid-column: 1;
   }
   .otros-proyectos {
-    -ms-grid-row: 8;
+    -ms-grid-row: 10;
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
   }
   #contacto-proyectos {
-    -ms-grid-row: 11;
+    -ms-grid-row: 13;
     -ms-grid-column: 1;
   }
   #index-proyectos {
-    -ms-grid-row: 10;
+    -ms-grid-row: 12;
     -ms-grid-column: 1;
   }
 }

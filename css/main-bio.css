@@ -47,6 +47,10 @@ body, html {
   grid-template-areas: ". ti-bi ." "te-bi te-bi te-bi" "te-bi te-bi te-bi" "te-bi te-bi te-bi" "fo-bi fo-bi fo-bi";
 }
 
+body {
+  padding-bottom: 30rem;
+}
+
 #titulo-bio {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -91,6 +95,7 @@ body, html {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
+  margin-top: 5rem;
   grid-area: fo-bi;
 }
 
@@ -108,8 +113,8 @@ body, html {
   }
 }
 
-.footer-bio:hover {
-  text-decoration: underline;
+.link-bio:hover {
+  border-bottom: 0.1rem solid #fcfcfc;
 }
 
 #instagram-bio {

@@ -87,7 +87,7 @@ body, html {
 }
 
 .nav:hover {
-  text-decoration: underline;
+  border-bottom: 0.1rem solid #fcfcfc;
 }
 
 /* --------------- CENTRO --------------- */

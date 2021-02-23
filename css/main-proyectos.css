@@ -211,7 +211,8 @@ body, html {
 }
 @media only screen and (max-width: 500px) {
   #otros-foto1 {
-    margin: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
     width: 18.5rem;
   }
 }
@@ -222,8 +223,9 @@ body, html {
 }
 @media only screen and (max-width: 500px) {
   #otros-foto2 {
-    margin: 0rem;
-    width: 19.4rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    width: 18.5rem;
   }
 }
 
@@ -234,8 +236,9 @@ body, html {
 }
 @media only screen and (max-width: 500px) {
   #otros-foto3 {
-    margin: 0rem;
-    width: 17rem;
+    margin-right: 0rem;
+    margin-bottom: 1rem;
+    width: 18.5rem;
   }
 }
 
@@ -327,9 +330,10 @@ iframe {
   grid-area: subt;
   text-align: center;
   font-style: italic;
-  opacity: 75%;
+  opacity: 95%;
   margin-bottom: 5rem;
   font-family: "Florania Trial";
+  font-weight: 1;
   color: #fcfcfc;
   font-size: 3rem;
   /* TELEFONO */
@@ -414,7 +418,8 @@ iframe {
   font-family: "Florania Trial";
   color: #fcfcfc;
   font-style: italic;
-  opacity: 75%;
+  font-family: "Florania Trial";
+  font-weight: 1;
   font-size: 3rem;
   /* TELEFONO */
 }
